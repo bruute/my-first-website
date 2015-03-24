@@ -1,28 +1,58 @@
-<html>
-    <head>
-        <title>Yakov's Blog</title>
-    </head>
-    <body>
- 
+<!DOCTYPE html>
 
- <div>
-    <h1><a href="/">Welcome to my blog</a></h1>
-</div>
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaks }}</p>
-    </div>
-{% endfor %}      
+{% load staticfiles %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Yakov's Blog</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/skel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style-xlarge.css' %}">
 
 
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		
+	</head>
+	<body class="landing">
 
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Yakov's Blog</a></h1>
+				</nav>
+			</header>
 
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Hello, welcome to my blog!</h2>
+				
+			</section>
 
-
-
-    </body>
+		<!-- One -->
+			<section id="one" class="wrapper style1 special">
+				<div class="container">
+					<header class="major">
+						
+					
+					<div class="">
+					{% for post in posts %}
+            			<div>
+               				
+               				<h2><a href="">{{ post.title }}</a></h2>
+                			<p>{{ post.text|linebreaks }}</p>
+                			<p><h1>published: {{ post.published_date }}</h1></p>
+            			</div>
+        			{% endfor %}	
+					</div>
+					</header>
+				</div>
+			</section>
+	</body>
 </html>
-
