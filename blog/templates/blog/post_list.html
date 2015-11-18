@@ -13,13 +13,13 @@
     <title>Yakov Leonov</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 
     <!-- Custom styles for website -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    
+   
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
@@ -105,7 +105,7 @@
     <!--BACKSTRETCH-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/bg.png", {speed: 500});
+        $.backstretch("static/img/bg.png", {speed: 500});
     </script>
 
   </body>
