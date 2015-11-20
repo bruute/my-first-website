@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    
+    <!-- Title of site -->
+    <title>Yakov Leonov</title>
+
+    <!-- Bootstrap core CSS -->
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <!-- Custom styles for websites -->
+   
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  
+  </head>
+
+  <body>
+
+    <div class="container">
+
+        <!-- Personal Logo -->
+    	<div class="logo">
+	    	 <img src="{%static "img/logo.png" %}" width ="100" />
+    	</div>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w">
+				
+                <!-- Big Header -->
+                <h1>Yakov Leonov's Blog<br/></h1>
+			</div>
+		</div>
+        
+        
+    </div>
+
+    <!-- /.container -->
+    
+    <div class="container">
+    	<div class="row w centered">
+    		<br>		
+    		<div class="col-lg-6 col-lg-offset-3">
+
+        
+                
+                 {% for post in posts %}
+                <div>
+
+                    <h9>{{ post.title }}</h9>
+                    <p><h8>{{ post.text|linebreaks }}</h8></p>
+                    <p><h6>published: {{ post.published_date }}</h6></p>
+                    <hr>
+                </div>
+            {% endfor %}    
+
+    		</div>
+    	</div>
+    </div>
+
+<footer>
+ 
+  <br>
+  <h7><center> Created by: Yakov Leonov </center></h7>
+  <h7><center> Tasty Animals Go Extinct </center></h7>
+  <br>
+
+</footer>
+
+    <!-- Bootstrap core JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+
+    <script>
+    $('.tooltip-demo').tooltip({
+      selector: "[data-toggle=tooltip]",
+      container: "body"
+    })
+	</script>
+
+
+    <!--BACKSTRETCH-->
+    <script type="text/javascript" src="static/js/jquery.backstretch.min.js"></script>
+    <script>
+
+        $.backstretch("{%static "img/bg.png" %}", {speed: 500});
+    </script>
+
+  </body>
+</html>
