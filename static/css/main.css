@@ -25,7 +25,8 @@ h7{
 h8{
     font-family: 'Oswald', sans-serif;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: 50;
 }
 
 h9{
@@ -40,12 +41,7 @@ p {
     margin-bottom: 25px;
     font-size: 25px;
 }
-p1 {
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-size: 10px;
 
-}
 .centered {
     text-align: center;
 }
