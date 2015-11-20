@@ -28,6 +28,20 @@ h8{
     color: #FFFFFF;
 }
 
+h9{
+    font-family: 'Oswald', sans-serif;
+    color: #CBD55A;
+    font-size: 25px;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+}
+
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
