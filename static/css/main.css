@@ -12,26 +12,26 @@ body {
 /* Titles */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: #FFFFFF;
 }
 
 h7{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 100;
     color: #FFFFFF;
 }
 
 h8{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #FFFFFF;
 }
 
 h9{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #CBD55A;
     font-size: 25px
 }
@@ -57,8 +57,9 @@ p {
 /* Links */
 a {
     color: #CBD55A;
-    font-size: 25px;
+    font-size: 30px;
     word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
