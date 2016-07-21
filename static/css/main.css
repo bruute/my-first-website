@@ -113,15 +113,3 @@ h1 {
 }
 
 
-.blink {
-  font-size: 1.5em;
-  font-weight: 400;
-  display: inline-block;
-  visibility: visible;
-  width: auto;
-  animation-name: flash;
-  animation-duration: .8s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-}
